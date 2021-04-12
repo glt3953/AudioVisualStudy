@@ -40,6 +40,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+    func applicationDidEnterBackground(_ application: UIApplication) {
 
+        // Disconnect the AVPlayer from the presentation when entering background
+
+//        // If presenting video with AVPlayerViewController
+//        playerViewController.player = nil
+//
+//        // If presenting video with AVPlayerLayer
+//        playerLayer.player = nil
+    }
+
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        // Reconnect the AVPlayer to the presentation when returning to foreground
+
+//        // If presenting video with AVPlayerViewController
+//        playerViewController.player = player
+//
+//        // If presenting video with AVPlayerLayer
+//        playerLayer.player = player
+    }
 }
 
